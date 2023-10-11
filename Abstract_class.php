@@ -1,21 +1,33 @@
 <?php
 
- abstract class parentclass{
-
-    public $name;
-
-    abstract protected function clac() : string;
- }
-
- class chaildclass extends parentclass{
-
-    public function calc() : string {
-        echo "that is name {$this->name}";
+    interface animal{
+        function makesound();
     }
- }
 
- $test = new chaildclass("audi");
- $test->calc();
+    class name implements animal{
+        public function makesound(){
+            echo" Mangukiya Rushit <br>";
+        }
+    }
+    class age implements animal{
+        public function makesound(){
+            echo" 20 <br>";
+        }
+    }
+    class salary implements animal{
+        public function makesound(){
+            echo" 20000 <br>";
+        }
+    }
+
+    $name = new name();
+    $age = new age();
+    $salary = new salary();
+    $animals=array($name, $age ,$salary);
+
+    foreach ($animals as $animal) {
+        $animal->makesound();
+    }
 
 
 
