@@ -14,15 +14,7 @@
           self::$age = $x;
         }
     }
-      
 
-    // echo hello::$name;
-    // echo"<br>";
-    // echo hello::$age;
-    // echo"<br>";
-    // hello::intro();
-    // echo"<br>";
-    // hello::intro();
     
     $obj = new hello("hello rushit",20);
     //   echo"<br>";

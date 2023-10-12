@@ -1,24 +1,20 @@
 <?php
-     namespace table;
-     class table{
-        public $title = "";
-        public $numrow = 0;
-        public function message(){
-            echo"<p> table '{$this->title}' has {$this->numrow} row.";
-        }
-     }
 
-     $table = new table();
-     $table->title = "my table";
-     $table->numrow = 4;
+   class pi{
+      public static $value = 3.14159;
+      
+   }
+         class x extends pi{
+            public function staticvalue(){
+               return parent::$value;
+            }
+         }
+
+
+
+         echo  x::$value;
+
+   $pi = new x();
+   echo $pi->staticvalue();
+
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<body>
-   <?php
-   $table->message();
-   
-   ?> 
-</body>
-</html>
