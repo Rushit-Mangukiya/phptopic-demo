@@ -1,20 +1,25 @@
 <?php
-      class domain{
-        protected static function getwebsiteName(){
-            return "W3school.com";
-        }
+    
+    class hello{
+      public static $name = "hello rushit mangukiya";
+      public static $age = "your age is : 20";
+
+      public static function intro(){
+        echo self::$name;
+        echo"<br>";
+        echo self::$age;
       }
+    }
 
-      class domainW3 extends domain{
-        public $websiteName;
-        public function __construct(){
-            $this -> websiteName = parent::getwebsiteName();
-                
+    echo hello::$name;
+    echo"<br>";
+    echo hello::$age;
+    echo"<br>";
+    hello::intro();
+    echo"<br>";
+    hello::intro();
+    
 
-        }   
-      }
 
-      $domainW3 = new domainW3;
-      echo $domainW3 -> websiteName;
 
 ?>
