@@ -11,7 +11,7 @@
         die("Connection Failed :" . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO MyGuests (firstname , lastname , email) VALUES ('prince' , 'kikani' , 'kikaniPrince@gmail.com')";
+    $sql = "INSERT INTO MyGuests (firstname , lastname , email) VALUES ('kuldeep' , 'Mangukiya' , 'MangukiyaKuldeep@gmail.com')";
 
     $result = mysqli_query($conn , $sql);
 
