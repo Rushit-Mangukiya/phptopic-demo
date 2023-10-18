@@ -12,7 +12,7 @@
     }
 
     $stmt = $conn->prepare("INSERT INTO Myguests (srno,firstname,lastname,email) VALUES (?,?,?,?)");
-    $stmt->bind_param("sss", $srno ,$firstname , $lastname , $email);
+    $stmt->bind_param("isss", $srno ,$firstname , $lastname , $email);
 
     $srno = 0;
     $firstname = "rushit";
@@ -32,7 +32,7 @@
     $email = "princekikani113@gmail.com";
     $stmt->execute();
 
-    echo"new record successfull";
+    echo"new record created successfull";
 
     $stmt->close();
     $conn->close();
